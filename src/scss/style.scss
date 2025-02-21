@@ -1,0 +1,34 @@
+@import "utils/variables";
+@import "utils/font";
+
+// components
+@import "components/logo";
+@import "components/separator";
+@import "components/burger";
+@import "components/burger-group";
+@import "components/expand-button";
+@import "components/contact";
+@import "components/get-button";
+
+@import "base/body";
+@import "blocks/overlay";
+
+// </header>
+@import "blocks/header";
+
+// </main>
+@import "blocks/content";
+
+@import "blocks/menu";
+
+@import "blocks/about";
+@import "blocks/section";
+@import "blocks/swiper";
+@import "blocks/section-list";
+@import "blocks/section-table";
+
+@import "blocks/footer";
+
+// </aside>
+@import "blocks/sidebar";
+@import "blocks/modal";

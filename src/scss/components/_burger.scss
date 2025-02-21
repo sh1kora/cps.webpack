@@ -1,0 +1,39 @@
+.burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 40px;
+  height: 40px;
+  min-width: 40px;
+  width: 40px;
+  background-color: $pink;
+  color: white;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: none;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.burger:hover {
+  background-color: rgba(255, 62, 121, 0.5);
+}
+
+.burger:active {
+  background-color: rgba(255, 62, 121, 0.8);
+}
+
+.burger-slide {
+  background-color: transparent;
+  border: 2px solid $pink;
+  background-image: url("../svg/dropdown.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-width: 1260px) {
+  .burger-close-sidebar {
+    display: none;
+  }
+}

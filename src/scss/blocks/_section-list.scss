@@ -1,0 +1,57 @@
+.section__list {
+}
+
+.section__list--bigger .section__slide {
+  height: 160px;
+}
+
+.section__list-wrapper {
+}
+
+//
+
+.section__slide {
+}
+
+.section__slide__text {
+  margin-bottom: auto;
+}
+
+.section__slide__image {
+}
+
+.section__slide__link {
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.section__list__expand-button {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .section__content {
+    padding: 0 24px;
+  }
+
+  .section__list-wrapper--expanded {
+    height: auto;
+  }
+
+  .section__list__expand-button {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section__content {
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1530px) {
+  .section__content {
+    /*  решить проблему с отступами у кнопки раскрытия */
+  }
+}
+

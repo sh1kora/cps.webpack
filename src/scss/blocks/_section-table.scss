@@ -1,0 +1,139 @@
+.data__type {
+  color: $gray-font-color;
+  line-height: 16px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+  .section__table {}
+
+  .section__table__header-group {
+    display: none;
+  }
+
+  .section__table__header {
+
+  }
+
+  .header__title {
+  }
+
+  .section__table__body {
+  }
+
+  .section__table__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
+    flex-direction: column;
+    height: 200px;
+    width: 260px;
+    border: none;
+    padding: 16px;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 6px;
+  }
+
+  .section__table__data {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    line-height: 18px;
+    font-size: 14px;
+  }
+
+  .section__table__data-button {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section__table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .section__table__header-group {
+    display: table-header-group;
+  }
+
+  .section__table__header {
+    display: table-row;
+    font-weight: bold;
+  }
+
+  .section__table__body {
+    display: table-row-group;
+  }
+
+  .section__table__item {
+    display: table-row;
+    border: none;
+    //border-bottom: 1px solid black;
+    height: auto;
+  }
+
+  .section__table__item:after {
+    content: "";
+    display: flex;
+    justify-self: center;
+    height: 0;
+    width: 96%;
+    border: 1px solid $border-color;
+    position: absolute;
+    left: 2%;
+    bottom: -1px;
+  }
+
+  .section__table__item:last-child:after {
+    border: none;
+  }
+
+  .section__table__item:last-child {
+    border: none;
+  }
+
+  .section__table__data {
+    display: table-cell;
+    padding: 16px;
+    text-align: left;
+    vertical-align: middle;
+    border: none;
+  }
+
+  .section__table__data--header {
+    font-weight: bold;
+  }
+
+  .section__table__data .data__type {
+    display: none;
+  }
+
+  .section__table__data-button {
+    text-align: center;
+  }
+
+  .section__table__body .section__table__item:first-child .section__table__data:first-child {
+    border-top-left-radius: 6px;
+  }
+
+  .section__table__body .section__table__item:first-child .section__table__data:last-child {
+    border-top-right-radius: 6px;
+  }
+
+  .section__table__body .section__table__item:last-child .section__table__data:first-child {
+    border-bottom-left-radius: 6px;
+  }
+
+  .section__table__body .section__table__item:last-child .section__table__data:last-child {
+    border-bottom-right-radius: 6px;
+  }
+}
+
+
+
+
