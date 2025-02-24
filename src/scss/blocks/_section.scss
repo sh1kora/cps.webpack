@@ -21,6 +21,9 @@
   margin: 0;
 }
 
+.section__content {
+}
+
 .section__notice {
   font-size: 14px;
   line-height: 20px;
@@ -66,6 +69,11 @@
 @media screen and (min-width: 1260px) {
   .section {
     padding: 0;
+  }
+
+  .section__content {
+    margin: 0 auto;
+    max-width: 1200px;
   }
 }
 
